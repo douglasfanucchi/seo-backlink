@@ -1,0 +1,39 @@
+.menu {
+  padding: 35px 50px;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  &__item {
+    color: $clear;
+    text-transform: uppercase;
+    font-size: $smaller;
+    font-family: $title;
+    font-weight: $bold;
+    line-height: 174.69%;
+
+    &--separator {
+      display: block;
+      width: 1px;
+      height: 20px;
+      background-color: $clear;
+    }
+
+    &--bordered {
+        border: 1px solid $clear;
+        border-radius: 50px;
+        padding: 7px 22px;
+    }
+
+    &:not(:last-child) {
+      margin-right: 25px;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+}
